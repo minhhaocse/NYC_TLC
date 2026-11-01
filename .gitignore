@@ -1,0 +1,25 @@
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Big Data Storage Layers (Too large for GitHub > 100MB)
+data/bronze/
+data/silver/
+data/gold/_temporary/
+
+# Local Tools & Dependencies
+tools/
+.spark-staging-*/
+
+# Environment & Logs
+logs/*.log
+.env
+venv/
+.idea/
+.vscode/
+
+# Keep GIS metadata shapefiles & sample gold for dashboards
+!data/metadata/
+!data/metadata/**
+!data/gold/sample_zone_daily_metrics.parquet
